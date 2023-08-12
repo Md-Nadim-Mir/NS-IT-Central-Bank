@@ -66,9 +66,20 @@ document.getElementById('withdraw-btn').addEventListener('click',function(){
 
    let previousBanlance=parseFloat(previousBanlanceString);
 
-   let newBalanceTotal=previousBanlance-newWithdrawAmout;
+   if(previousBanlance>newWithdrawAmout){
 
-   document.getElementById('balance-amount').innerText=newBalanceTotal;
+    let newBalanceTotal=previousBanlance-newWithdrawAmout;
+    document.getElementById('balance-amount').innerText=newBalanceTotal;
+
+   }
+
+   else {
+
+     alert('Your Account Not Sufficient Balance For Withdraw')
+
+   }
+
+   
 
 
 })
