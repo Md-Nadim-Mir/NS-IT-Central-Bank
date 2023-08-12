@@ -29,6 +29,9 @@ document.getElementById('withdraw-btn').addEventListener('click',function(){
         // new total balance
         let newBalanceTotal=previousBanlance-newWithdrawAmout;
        document.getElementById('balance-amount').innerText=newBalanceTotal;
+
+       document.getElementById('withdraw-amount').innerText=totalWithdraw;
+       document.getElementById('withdraw-input').value='';
     
        }
 
@@ -42,8 +45,7 @@ document.getElementById('withdraw-btn').addEventListener('click',function(){
 
 
 
-    document.getElementById('withdraw-amount').innerText=totalWithdraw;
-    document.getElementById('withdraw-input').value='';
+    
     
 
 
