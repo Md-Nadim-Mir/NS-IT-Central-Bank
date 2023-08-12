@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NS IT Central Bank</title>
+
+
+    <!-- tailwind and dasi ui use -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./download.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1
+            class="mt-2 md:mt-20 text-2xl text-[orange] font-bold text-center p-5 mx-2 md:mx-36 lg:mx-72 my-10 border-2 rounded-2xl bg-slate-500">
+            <span class="text-3xl text-[salmon] font-extrabold pb-5">NS IT Central
+                Bank</span> <br> Account Details
+        </h1>
+
+    </header>
+
+    <main>
+
+
+
+
+        <!-- deposit , wihtdraw and balance check section -->
+
+        <div class="mx-4 text-center md:mx-20 flex-row  md:flex justify-center items-center  md:gap-5">
+
+            <!-- deposit  -->
+
+            <div class="bg-green-600 p-5 md:p-10 text-white w-full gap-2  rounded-xl ">
+                <h1 class="text-4xl font-bold mb-2">Deposit</h1>
+                
+                <h2  class="text-xl">$<span id="deposit-amount">125</span></h2>
+            </div>
+
+
+            <!-- withdraw -->
+
+            <div class="bg-purple-600 p-5 md:p-10 text-white w-full rounded-xl mt-2 mb-2">
+                <h1 class="text-4xl font-bold mb-2">Withdraw</h1>
+
+                <h2 class="text-xl">$<span id="withdraw-amount">25</span></h2>
+            </div>
+
+
+            <!-- balance -->
+
+            <div class="bg-slate-900 p-5 md:p-10 text-white w-full rounded-xl">
+                <h1 class="text-4xl font-bold mb-2">Balance</h1>
+
+                <h2  class="text-xl">$<span id="balance-amount">1225</span></h2>
+            </div>
+
+
+        </div>
+
+
+        <!-- deposit and withdraw input section -->
+
+        <div class="mx-4 mt-2 md:mt-10 text-center md:mx-20 flex-row  md:flex justify-center items-center  md:gap-5">
+
+            <!-- deposit field -->
+
+            <div class="bg-pink-900 p-5 md:p-10  w-full gap-2  rounded-xl mt-2 mb-2">
+                <h1 class="text-2xl text-white font-semibold">Please  Enter  Deposit Amount</h1>
+               
+                <input id="deposit-input" type="text" placeholder="$ Amount You Want To Deposit" class=" my-5 input input-bordered input-accent w-full max-w-xs" />
+                
+                <button id="deposit-bnt" class="btn btn-active hover:bg-green-800 btn-neutral">Deposit</button>
+            </div>
+
+            <!-- Withdraw field -->
+
+            <div class="bg-yellow-900 p-5 md:p-10 w-full gap-2  rounded-xl ">
+                <h1 class="text-2xl text-white font-semibold">Please  Enter  Withdraw Amount</h1>
+                
+                <input id="withdraw-input" type="text" placeholder="$ Amount You Want To Withdraw" class="my-5 input input-bordered input-accent w-full max-w-xs" />
+                
+                <button id="withdraw-btn" class="btn btn-active btn-neutral hover:bg-purple-800">Withdraw</button>
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+
+    <!-- js script added -->
+
+    <script src="bank.js"></script>
+
+</body>
+
+</html>
